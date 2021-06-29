@@ -1,0 +1,121 @@
+
+
+/** media screen para website, pantallas grandes **/
+
+@media screen and (min-width: 1000px) {
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .hero-mobile {
+        display: none;
+    }
+
+    .nav-web {
+        padding: 0 100px;
+        margin: 22px 0;
+    }
+
+    .hero-website {
+        margin: 120px 0 0;
+        padding: 0 200px;
+    }
+
+    h1 {
+        font-size: 64px;
+        max-width: 740px;
+    }
+
+    div.buttoncenter  {
+        padding: 0 200px;
+    }
+
+    .reproductor {
+        width: 584px;
+        height: 232px;
+        padding: 20px;
+    }
+
+    .episodios-azul h2 {
+        padding: 180px 0 16px 200px;
+    }
+    
+    .episodios-reproductor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .mascararectangulo {
+        clip-path: polygon(0 12%, 100% 0%, 100% 88%, 0% 100%);
+    }
+
+     .rectanguloazul {
+        height: 950px;
+    }
+    
+    .framepod {
+        margin-bottom: 36px;
+        padding-right: 36px;
+    }
+
+    .phone {
+        margin-top: 48px;
+        padding: 0 32px;
+    }
+
+    .nosotrostexto h2 {
+        padding: 0 0;
+        margin: 160px 16px 8px;
+    }
+
+    /** limpieza de codigo hasta aqui**/
+
+    .invitadas h2 {
+        padding: 0 16px 0 200px;
+    }
+
+    .temas h2 {
+        padding: 0 200px 0px;
+        margin: 64px 0 0;
+    }
+    
+    .topicos-icons-p {
+        margin: 69px 0 34px;
+        padding: 0 100px;
+    }
+
+    .sect_novedades {
+        min-height: 518px;
+    }
+
+    .semirectangulo { 
+        height: 518px;
+    }
+    
+    .maskrectangulo {
+        clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    
+    .novedades {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .novedades h2 {
+        margin: 247px 36px 36px;
+        font-size: 48px;
+        color: white;
+        text-align: center;
+    }
+
+    .foot {
+        padding: 0 74px 0 100px;
+    }
+
+    .f_icon a {
+        padding: 0 26px;
+    }
+ }

@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+}
+
+/** clases para mobile-first **/
+
+body {
+/**    background-color: rgb(150, 150, 209); **/
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+}
+
+/** menu mobile **/
+
+.nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 1rem;
+}
+
+div .nav-burger {
+    background-color: blue;
+}
+
+nav .nav-burger input {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    transform: scale(1.5);
+}
+
+nav .nav-burger .span1 {
+    transform-origin: 10% 0%;
+    margin-bottom: 3px;
+}
+
+nav .nav-burger .span2 {
+    margin-bottom: 3px;
+}
+
+nav .nav-burger .span3 {
+    transform-origin: 10% 100%;
+}
+
+nav .nav-burger span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    position: relative;
+    background-color: #000000;
+    z-index: 1;
+    transition: 0.3s ease, 0.3s ease, 0.3s ease;
+}
+
+nav .nav-burger ul {
+    position: absolute;
+    top: 44px;
+    right: 0;
+    width: 0;
+    height: 224px;
+    padding-left: 0px;
+    padding-top: 16px;
+    overflow: hidden;
+    background-color: #0000EC;
+    list-style-type: none;
+    transition: width 0.3s ease-in-out;
+}
+
+nav .nav-burger ul li {
+    position: relative;
+    margin-left: 16px;
+}
+
+nav .nav-burger input:checked ~ label .span1 {
+    opacity: 1;
+    transform: rotate(45deg);
+    background-color: #000000;
+}
+
+nav .nav-burger .span1 {
+    transform-origin: 10% 0%;
+    margin-bottom: 3px;
+}
+
+nav .nav-burger input:checked ~ label .span2 {
+    opacity: 0;
+}
+
+nav .nav-burger .span1 {
+    margin-bottom: 3px;
+}
+
+nav .nav-burger input:checked ~ label .span3 {
+    opacity: 1;
+    transform: rotate(-45deg);
+    background-color: #000000;
+}
+
+nav .nav-burger .span1 {
+    transform-origin: 10% 100%;
+}
+
+nav .nav-burger input:checked ~ ul {
+    width: 100%;
+    transition: width 0.3s ease-out;
+}
+
+nav .nav-burger ul li a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+nav .nav-burger ul li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+}
+
+
+/** h1, h2, h3, p**/
+
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+    color: #060A24;
+}
+
+/** Hero section **/
+
+.hero-mobile p {
+    text-align: left;
+     margin-top: 16px;
+
+}
+
+.hero-mobile h1 {
+    margin: 0;
+    padding-right: 42px;
+}
+    
+.hero-mobile {
+    margin-top: 29px;
+    padding: 0 16px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.point {
+    color: #0000EC;
+}
+
+/** episodios_spotify**/
+
+
+.episodios-azul {
+    position: relative;
+}
+
+.rectanguloazul {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 1300px;
+    background: linear-gradient( 225deg, #0000ff 0%, #0000a3 100%);
+}
+
+.mascararectangulo {
+    clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+}
+
+.episodios-azul h2 {
+    color: white;
+    padding: 64px 16px 10px;
+    margin: 0;
+}
+
+div.episodios-reproductor {
+    display: flex;
+    flex-direction: column;
+}
+
+div.episodios-reproductor iframe {
+    padding: 0 10px;
+    margin-bottom: 12px;
+}
+
+
+/** de donde venimos **/
+
+.phone {
+    margin-top: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.phone img {
+   width: 300px;
+}
+
+.nosotrostexto {
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotrostexto h2 {
+    margin: 27px 0 8px;
+    padding: 0 16px;
+
+}
+
+.nosotrostexto p {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 16px;
+    margin-bottom: 8px;
+    max-width: 318px;
+}
+
+/** invitadxs_estelares_galeria**/
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    padding: 0;
+}
+
+.invitadas h2 {
+    margin: 27px 0 14px;
+    padding: 0 35px 0 16px;
+}
+
+/** algunos_de_nuestros_temas **/
+
+.temas h2 {
+    padding: 0 16px;
+    margin: 48px 0 37px;
+}
+
+.topicos-icons-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topic-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topic-icons h3{
+    margin: 13px 0px 60px;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    max-width: 268px;
+}
+
+
+/** novedades_escucha_los_episodios **/
+
+.semirectangulo {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 320px;
+    background: linear-gradient( 225deg, #0000ff 0%, #0000a3 100%);
+}
+
+.maskrectangulo {
+    clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.sect_novedades {
+    min-height: 320px;
+}
+
+.novedades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.novedades h2 {
+    position: relative;
+    margin: 64px 0 36px;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+
+/** FOOTER: Copyright e iconos de redes sociales **/
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 31px;
+    padding: 0 16px;
+}
+
+.foot p {
+    text-align: center;
+    margin: 24px 0 16px;
+}
+
+.f_icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.f_icon {
+    transition: 0.5s ease;
+}
+
+.f_icon a:hover{
+    transform: translateY(-8px)
+}
+
+/** botones superior e inferior **/
+
+div.buttoncenter {
+    display: flex;
+    justify-content: center;
+    margin: 36px 16px 24px;
+}
+
+button.buttonconocemas {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    background: #00F3BB;
+    padding: 0;
+    width: 100%;
+    height: 48px;
+    border-style: none;
+    cursor: pointer;
+}
+
+button.buttonconocemas:hover {
+    color: white;
+    background: linear-gradient( 225deg, #0000fe 0%, #00f0b8 100%);
+
+}
+
+.buttonfooter {
+    font-size: 16px;
+    position: relative;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    text-align: center;
+    background: #00F3BB;
+    padding: 0;
+    width: 100%;
+    height: 48px;
+    border-style: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.buttonfooter:hover {
+    color: white;
+    background: linear-gradient( 225deg, #0000fe 0%, #00f0b8 100%);
+
+}
+
+/** clases para website que estan en display none **/
+
+.nav-web {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 100px;
+}
+
+.barra-web {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.barra-web li a{
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.barra-web li a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+}
+
+.barra-web li a:active {
+    color: #555869;
+    text-decoration: line-through;
+}
+
+.hero-website {
+    display: none;
+}

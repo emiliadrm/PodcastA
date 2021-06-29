@@ -1,0 +1,180 @@
+/** media screen para "tablet" **/
+
+@media screen and (min-width: 600px) {
+
+    .nav-mobile {
+        display: none;
+    }
+
+    .hero-mobile {
+        display: none;
+    }
+
+    .nav-web {
+        display: flex;
+        padding: 0 80px;
+        margin: 22px 0;
+    }
+
+    .hero-mobile {
+        display: none;
+    }
+
+    .hero-website {
+        display: block;
+        margin-top: 60px;
+        padding: 0 80px;
+    }
+
+    h1 {
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 48px;
+        margin: 0;
+    }
+
+   .hero-website p {
+        font-size: 16px;
+        color: #060A24;
+        line-height: 24px;
+        max-width: 628px;
+    }
+
+    div.buttoncenter {
+        display: block;
+        margin: 56px 0 5px;
+        padding: 0 80px;
+    }
+
+    button.buttonconocemas {
+        width: 226px;
+        height: 58px;
+    }
+
+    .buttonconocemas {
+        font-size: 18px;
+    }
+
+    .episodios-azul h2 {
+        padding: 120px 0 16px 80px;
+    }
+
+    .mascararectangulo {
+        clip-path: polygon(0 15%, 100% 0%, 100% 95%, 0% 100%);
+    }
+ 
+    .rectanguloazul {
+        height: 842px;
+    }
+
+    div.episodios-reproductor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 26px 20px;
+    }
+    
+    .framepod {
+        margin-bottom: 26px;
+        padding-right: 26px;
+    }
+
+    div.episodios-reproductor iframe {
+        width: 50%;
+    }
+    
+    .nosotrosdesktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .phone {
+        max-height: 500px;
+        margin-top: 36px;
+        padding: 0 12px;
+    }
+
+    .nosotrostexto h2 {
+        padding: 0 0;
+        font-size: 48px;
+        margin: 189px 16px 8px;
+    }
+
+    .nosotrostexto p {
+        line-height: 24px;
+        font-size: 16px;
+        margin: 0 16px 8px;
+        padding: 0 0;
+        max-width: 464px;
+    }
+
+    .galeria {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .galeria img {
+        width: 33.3333%;
+    }
+
+    /** limpieza de codigo hasta aqui**/
+
+    .invitadas h2 {
+        margin: 27px 0 16px;
+        padding: 0 16px 0 120px;
+    }
+
+    .temas h2 {
+        font-size: 48px;
+        padding: 0 16px 0 120px;
+        margin: 27px 0 0;
+    }
+
+    .topicos-icons-p {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 40px 0 34px;
+        padding: 0 20px;
+    }
+
+    .topic-icons h3 {
+        margin: 29px 0 0;
+        max-width: 220px;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 31px;
+        padding: 0 34px 0 50px;
+    }
+    
+    .foot p {
+        font-size: 16px;
+        text-align: center;
+        margin: 36px 0 0;
+    }
+    
+    .f_icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 36px;
+    }
+
+    .f_icon a {
+        padding: 0 16px;
+    }
+    .buttonfooter { 
+        font-size: 18px;
+        width: 345px;
+        height: 56px;
+    }
+ }
